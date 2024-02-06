@@ -14,7 +14,7 @@ function App() {
         name: "product " + (prevState.length + 1),
         price: prevState.length * 100 + 100,
         brand: "some famous brand",
-        description: "the best description that you ever imagined",
+        description: "the best description that you ever ever imagined",
         pictureUrl: "http://picsum.photos/200",
       },
     ]);
