@@ -5,6 +5,7 @@ import {
   TableBody,
   TableCell,
   TableContainer,
+  TableHead,
   TableRow,
   Typography,
 } from "@mui/material";
@@ -52,28 +53,28 @@ export default function ProductDetails() {
           })}
         </Typography>
 
-        {/* Product */}
-        <TableContainer>
+        {/* Product Details*/}
+        <TableContainer sx={{mt: 5}}>
           <Table>
             <TableBody>
               <TableRow>
-                <TableCell>Nome</TableCell>
+                <TableCell sx={{fontWeight: "bold"}}>Nome</TableCell>
                 <TableCell>{product.name}</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell>Descrição</TableCell>
+                <TableCell sx={{fontWeight: "bold"}}>Descrição</TableCell>
                 <TableCell>{product.description}</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell>Tipo</TableCell>
+                <TableCell sx={{fontWeight: "bold"}}>Tipo</TableCell>
                 <TableCell>{product.type}</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell>Marca</TableCell>
+                <TableCell sx={{fontWeight: "bold"}}>Marca</TableCell>
                 <TableCell>{product.brand}</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell>Quantidade em Estoque</TableCell>
+                <TableCell sx={{fontWeight: "bold"}}>Quantidade em Estoque</TableCell>
                 <TableCell>{product.quantityInStock}</TableCell>
               </TableRow>
             </TableBody>
